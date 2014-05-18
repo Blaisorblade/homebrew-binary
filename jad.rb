@@ -12,4 +12,7 @@ class Jad < Formula
     bin.install_symlink "#{libexec}/jad"
   end
 
+  def test
+    system "#{bin}/jad"
+  end
 end
